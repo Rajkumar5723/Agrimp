@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>About | AGRO-WEB</title>
+
+   <!-- Bootstrap & Custom CSS -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+   <link rel="icon" href="{{ url_for('static', filename='images/fevicon.png') }}" type="image/gif">
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+</head>
+
+<body class="main-layout">
+   <!-- Loader -->
+   <div class="loader_bg">
+      <div class="loader">
+         <img src="{{ url_for('static', filename='images/loading.gif') }}" alt="Loading...">
+      </div>
+   </div>
+
+   <!-- Header -->
+   <header>
+      <div class="header">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section"></div>
+               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                  <nav class="navigation navbar navbar-expand-md navbar-dark">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04">
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                           <li class="nav-item active"><a class="nav-link" href="/about">About</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/products">Products</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+                           <li class="nav-item d_none"><a class="nav-link" href="#"><i class="fa fa-search"></i></a></li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!-- About Section -->
+   <div class="about">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2>People Say About Agriculture</h2>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-md-12">
+               <div id="myCarousel" class="carousel slide about_Carousel" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                     <li data-target="#myCarousel" data-slide-to="1"></li>
+                     <li data-target="#myCarousel" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                     <div class="carousel-item active">
+                        <div class="container">
+                           <div class="carousel-caption">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="test_box">
+                                       <i><img src="{{ url_for('static', filename='images/picture1.png') }}" alt="pic1" /></i>
+                                       <h4>ABC</h4>
+                                       <p>Agriculture is the backbone of our economy... eco-friendly solutions that secure the future of farming for generations to come.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="container">
+                           <div class="carousel-caption">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="test_box">
+                                       <i><img src="{{ url_for('static', filename='images/picture2.png') }}" alt="pic2" /></i>
+                                       <h4>EFG</h4>
+                                       <p>Agriculture is not just about growing crops; it’s about growing the future... preserving nature for generations to come.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carousel-item">
+                        <div class="container">
+                           <div class="carousel-caption">
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class="test_box">
+                                       <i><img src="{{ url_for('static', filename='images/picture3.png') }}" alt="pic3" /></i>
+                                       <h4>IJK</h4>
+                                       <p>Farming has come a long way... creating a sustainable future for everyone.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Next</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Footer -->
+   <div class="copyright">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <p>&copy; 2024 All Right Reserved</p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- JavaScript Files -->
+   <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/jquery-3.0.0.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</body>
+</html>

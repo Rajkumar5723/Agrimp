@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Agri-Hub Blog</title>
+
+   <!-- CSS Links -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+   <link rel="icon" href="{{ url_for('static', filename='images/fevicon.png') }}" type="image/gif">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css">
+</head>
+
+<body class="main-layout">
+   <!-- Loader -->
+   <div class="loader_bg">
+      <div class="loader"><img src="{{ url_for('static', filename='images/loading.gif') }}" alt="Loading..." /></div>
+   </div>
+
+   <!-- Header -->
+   <header>
+      <div class="header">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                  <div class="full">
+                     <div class="center-desk"></div>
+                  </div>
+               </div>
+               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                  <nav class="navigation navbar navbar-expand-md navbar-dark">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04">
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/products">Products</a></li>
+                           <li class="nav-item active"><a class="nav-link" href="/blog">Blog</a></li>
+                           <li class="nav-item d_none"><a class="nav-link" href="#"><i class="fa fa-search"></i></a></li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!-- Blog Section -->
+   <div class="choose">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8">
+               <div class="titlepage">
+                  <h2>Our Blog</h2>
+                  <p>It is predefined</p>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid">
+         <div class="row d_flex">
+            <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+               <div class="padding_with">
+                  <div class="row">
+                     <div class="col-md-6 padding_bottom">
+                        <div class="choose_box">
+                           <i><img src="{{ url_for('static', filename='images/icon1.png') }}" alt="Youth Opportunities" /></i>
+                           <div class="choose_text">
+                              <h3>OPPORTUNITIES FOR YOUTH</h3>
+                              <p>Youth of our community can dig in dirt and watch things grow.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6 padding_bottom">
+                        <div class="choose_box">
+                           <i><img src="{{ url_for('static', filename='images/icon2.png') }}" alt="Garden Plots" /></i>
+                           <div class="choose_text">
+                              <h3>COMMUNITY GARDEN PLOTS</h3>
+                              <p>Our easy-to-garden planter boxes are available for lease to community residents.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6 padding_bottom2">
+                        <div class="choose_box">
+                           <i><img src="{{ url_for('static', filename='images/icon3.png') }}" alt="Event Space" /></i>
+                           <div class="choose_text">
+                              <h3>OUR EVENT SPACE</h3>
+                              <p>Your guests will enjoy the natural and urban surroundings.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="choose_box">
+                           <i><img src="{{ url_for('static', filename='images/icon4.png') }}" alt="Expert Farmer" /></i>
+                           <div class="choose_text">
+                              <h3>EXPERT FARMER</h3>
+                              <p>It is a long established fact that a reader will be distracted by the readable content.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+               <div class="choose_img">
+                  <figure><img src="{{ url_for('static', filename='images/food.jpg') }}" alt="Agri Blog Image" /></figure>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Footer -->
+   <div class="copyright">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <p>&copy; 2024 All Right Reserved</p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- JS Files -->
+   <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/jquery-3.0.0.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</body>
+</html>

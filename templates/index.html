@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>AGRO-WEB</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+
+   <!-- Bootstrap & Custom CSS -->
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}">
+   <link rel="icon" href="{{ url_for('static', filename='images/fevicon.png') }}" type="image/gif">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+   <!-- HTML5 Shim and Respond.js for IE8 support -->
+   <!--[if lt IE 9]>
+   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+   <![endif]-->
+</head>
+
+<body class="main-layout">
+
+   <!-- Loader -->
+   <div class="loader_bg">
+      <div class="loader">
+         <img src="{{ url_for('static', filename='images/loading.gif') }}" alt="Loading..." />
+      </div>
+   </div>
+
+   <!-- Header -->
+   <header>
+      <div class="header">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                  <div class="full">
+                     <div class="center-desk">
+                        <div class="logo">
+                           <p style="font-size: 24px; text-align: center; color:white; padding-right: 50px;"><b>AGRI-HUB</b></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                  <nav class="navigation navbar navbar-expand-md navbar-dark">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04">
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item active"><a class="nav-link" href="/">Home</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/products">Products</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+                           <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!-- Banner -->
+   <section class="banner_main">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="text-bg">
+                  <h1>AGRI-HUB</h1>
+                  <p>Soil fertility refers to the ability of soil to provide essential nutrients, water, and a supportive environment for optimal plant growth. In contrast, soil infertility occurs when the soil lacks sufficient nutrients or has unfavorable conditions, hindering plant development and reducing agricultural productivity.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Three Box -->
+   <div class="three_box">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-4">
+               <div class="box_text">
+                  <figure><img src="{{ url_for('static', filename='images/pic1.jpg') }}" alt="pic1"/></figure>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="box_text">
+                  <figure><img src="{{ url_for('static', filename='images/pic2.jpeg') }}" alt="pic2"/></figure>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="box_text">
+                  <figure><img src="{{ url_for('static', filename='images/pic4.jpg') }}" alt="pic3"/></figure>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Hottest Section -->
+   <div class="hottest">
+      <div class="container">
+         <div class="row d_flex">
+            <div class="col-md-5">
+               <div class="titlepage">
+                  <h2>Destinations <br>for SOIL</h2>
+               </div>
+            </div>
+            <div class="col-md-7">
+               <div class="hottest_box">
+                  <p>Soil health is critical for sustainable agriculture and environmental balance. Fertile soil contains a balanced mix of essential nutrients like nitrogen, phosphorus, and potassium, along with organic matter, supporting plant growth...</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Footer -->
+   <div class="copyright">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <p>&copy; 2024 All Right Reserved</p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- JS Files -->
+   <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/jquery-3.0.0.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+   <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+</body>
+</html>

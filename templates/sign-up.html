@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sign Up - Agrimp</title>
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+
+      body {
+         background: linear-gradient(135deg, #d4fc79, #96e6a1);
+         font-family: 'Segoe UI', sans-serif;
+         height: 100vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .login-container {
+         background-color: #ffffff;
+         padding: 30px;
+         border-radius: 12px;
+         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+         max-width: 400px;
+         width: 100%;
+      }
+
+      .logo-section {
+         text-align: center;
+         margin-bottom: 20px;
+      }
+
+      .logo-section img {
+         width: 80px;
+         height: 80px;
+         border-radius: 10px;
+         object-fit: cover;
+         margin-bottom: 10px;
+      }
+
+      h2 {
+         font-size: 22px;
+         color: #333;
+         text-align: center;
+         margin-bottom: 15px;
+      }
+
+      .form-group {
+         margin-bottom: 15px;
+      }
+
+      label {
+         display: block;
+         margin-bottom: 5px;
+         color: #333;
+         font-weight: 600;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+         width: 100%;
+         padding: 10px;
+         border: 1px solid #ccc;
+         border-radius: 6px;
+         font-size: 14px;
+      }
+
+      .login-button {
+         width: 100%;
+         background-color: #28a745;
+         color: white;
+         padding: 12px;
+         border: none;
+         border-radius: 6px;
+         font-size: 16px;
+         margin-top: 10px;
+         cursor: pointer;
+         transition: background 0.3s ease;
+      }
+
+      .login-button:hover {
+         background-color: #218838;
+      }
+
+      .error-message {
+         margin-top: 10px;
+         color: red;
+         text-align: center;
+         font-size: 14px;
+      }
+
+      .success-message {
+         margin-top: 10px;
+         color: green;
+         text-align: center;
+         font-size: 14px;
+      }
+
+      .login-links {
+         text-align: center;
+         margin-top: 15px;
+      }
+
+      .login-links a {
+         color: #007bff;
+         text-decoration: none;
+         font-size: 14px;
+      }
+
+      .login-links a:hover {
+         text-decoration: underline;
+      }
+   </style>
+</head>
+<body>
+   <div class="login-container">
+      <div class="logo-section">
+         <img src="{{ url_for('static', filename='images/planting.jpg') }}" alt="Logo">
+         <h2>Agrimp Sign-Up</h2>
+      </div>
+
+      <form method="POST" action="/sign-up" class="login-form">
+         <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+         </div>
+         <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+         </div>
+         <button type="submit" class="login-button">Sign Up</button>
+
+         {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+               {% for category, message in messages %}
+                  <p class="{{ 'error-message' if category == 'warning' else 'success-message' }}">{{ message }}</p>
+               {% endfor %}
+            {% endif %}
+         {% endwith %}
+      </form>
+
+      <div class="login-links">
+         <a href="/login">Already have an account? Login</a>
+      </div>
+   </div>
+</body>
+</html>
